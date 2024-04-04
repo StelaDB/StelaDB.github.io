@@ -1,5 +1,7 @@
 *{
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
 
 body{
@@ -7,54 +9,42 @@ body{
 }
 header{
     background-color: #fea6a5;
-    height: 140px;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
 }
 
 main{
     background-color: #84c3c5;
-}
-.tela{
-    width: 100%;
-    display: flex;
-    justify-content: space-around; 
-
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 300px; 
+        display: inline-block;
+        margin: 0 auto;
     }
-
 }
 
 .ft1, .ft2, .ft3{
     display: flex;
     width: 300px;
     margin-top: 5%;
+
 }
-.ft2{
-    margin-top: -6px;
-}
-.ft3{
-    margin-top: 26px;
-}
-.img1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 500px;
-    width: 525px;
+
+.titulo1{
+    width: 600px;
+    height: 100px;
 }
 .f1, .f2, .f3{
     display: flex;
     width: 300px;
-}
-.f2{
-    margin-top: -72px;
-}
-.f3{
-    margin-top: 72px;
+    margin-top: 5%;
 }
 footer{
     background-color: #fea6a5;
@@ -71,4 +61,36 @@ footer{
 }
 .links, p{
     color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        display: flex;
+        gap: 10px; /* Ajuste do espaçamento para tablets */
+        padding: 10px; /* Ajuste do espaço interno para tablets */
+        flex-direction: column;
+    }
+
+    main p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    main div{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ft1, .ft2, .ft3{
+        height: 800px;
+        width: 600px;
+    }
+    
+    .f1, .f2, .f3{
+        height: 800px;
+        width: 600px;
+    }
+
 }
