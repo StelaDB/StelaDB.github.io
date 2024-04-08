@@ -173,16 +173,11 @@ footer{
             height: 22vh;
            
         }
-        /* .people{
-            display: grid;
-            justify-content: space-between; 
-            margin: 0 auto;
-            gap: 4rem; */
-        }
         
         .ft4, .ft5, .ft6{
             display: flex;
             justify-content: space-between;
             gap: 4rem;
         }
+    }
 }
